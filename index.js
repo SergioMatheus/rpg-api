@@ -7,6 +7,9 @@ const express = require('express')
 // Inicialização do app
 const app = express()
 
+// Conexão com o banco de dados
+require('./config/database.js')
+
 // Inicialização da rota principal
 app.get('/', (req, res) => {
     res.send('Olá RPG!')
