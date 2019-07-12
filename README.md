@@ -3,7 +3,8 @@ Api para o game de RPG para plataformas web e mobile
 
 ## Dependencias para uso deste sistema
 * Mongo DB
-* Npm ou yarn
+* Npm
+* yarn
 * NodeJS
 
 ## Como instalar o sistema
