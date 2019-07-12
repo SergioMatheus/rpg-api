@@ -77,14 +77,17 @@ caso ocorra algum erro no primeiro comando você não tem o mongo no seu computa
 ***Obs.: estes comandos os comandos para verificação da existencia do mongo na maquina também são para inicialização do mesmo***
 
 ## Executando o sistema
-Atravéz do seu terminal acesse a pasta do projeto clonado no seu local de trabalho e inicie a instalação do ambiente com o comando:
-
+Atravéz do seu terminal acesse a pasta do projeto clonado no seu local de trabalho e inicie a instalação do ambiente
 ```bash
 $ yarn install
 ```
 
-após a instalação total das dependencias:
+Após a instalação total das dependencias execute o comando para a criação do arqivo de conexão com o banco de dados
+```bash
+$ yarn setup
+```
 
+E então execute inicie o sistema
 ```bash
 $ yarn dev
 ```
