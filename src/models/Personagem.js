@@ -1,6 +1,11 @@
 const mongoose = require('mongoose')
+const ObjectId = mongoose.Schema.Types.ObjectId
 
 const PersonangemSchema = new mongoose.Schema({
+    usuario_id: {
+        type: ObjectId,
+        ref: 'Usuario'
+    },
     nome: {
         type: String,
         required: true
@@ -74,13 +79,19 @@ const PersonangemSchema = new mongoose.Schema({
         type: Number
     },
     equipamentos: [
-        // TODO Ver como referenciar o models de Equipamentos puxando apenas os equipamentos deste personagem
+        {
+            type: ObjectId,
+            ref: 'Equipamento'
+        }
     ],
     acessoMagia: {
         type: String
     },
     magias: [
-        // TODO Ver como referenciar o models de Magia puxando apenas as magias deste personagem
+        {
+            type: ObjectId,
+            ref: 'Magia'
+        }
     ],
     expulsarMortos: [
         {
@@ -97,7 +108,14 @@ const PersonangemSchema = new mongoose.Schema({
         }
     ],
     armasAtaque: [
-        // TODO Ver como referenciar o models de Armas e Magias puxando apenas as magias e armas deste personagem
+        {
+            type: ObjectId,
+            ref: 'Magia'
+        },
+        {
+            type: ObjectId,
+            ref: 'Arma'
+        }
     ]
 })
 

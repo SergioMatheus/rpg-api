@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const ObjectId = mongoose.Schema.Types.ObjectId
 
 const UsuarioSchema = new mongoose.Schema({
     nome: {
@@ -18,7 +19,10 @@ const UsuarioSchema = new mongoose.Schema({
         required: true
     },
     personagens:  [
-        // TODO Ver como referenciar o models de Personagem puxando apenas os personagens criados por este usuario
+        {
+            type: ObjectId,
+            ref: 'Personagem'
+        }
     ]
 })
 
