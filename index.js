@@ -3,12 +3,14 @@ const port = 3000
 
 // Dependencias
 const express = require('express')
+const requireDir = require('require-dir')
 
 // Inicialização do app
 const app = express()
 
-// Conexão com o banco de dados
+// Iniciando o DB
 require('./config/database.js')
+requireDir('./src/models')
 
 // Inicialização da rota principal
 app.get('/', (req, res) => {
