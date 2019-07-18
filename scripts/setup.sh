@@ -1,3 +1,4 @@
+cd ..
 mkdir config
 cd config
 touch database.js
