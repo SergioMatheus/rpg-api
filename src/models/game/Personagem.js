@@ -7,10 +7,6 @@ const ObjectId = mongoose.Schema.Types.ObjectId // Armazenando o tipo de dado Ob
 
 // Inicindo o Schema para a criação do model
 const PersonangemSchema = new mongoose.Schema({
-    usuario_id: {
-        type: ObjectId,
-        ref: 'Usuario'
-    },
     /**
      * Nome do personagem
      */
