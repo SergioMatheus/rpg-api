@@ -1,18 +1,18 @@
 const expresse = require('express')
 const routes = expresse.Router()
 
-const UsuarioController = require('./controllers/UsuarioController')
-const PersonagemController = require('./controllers/PersonagemController')
+const UserController = require('./controllers/UserController')
+const CharacterController = require('./controllers/CharacterController')
 
-// Rotas Usuario
-routes.get('/usuarios', UsuarioController.index)
-routes.get('/usuarios/:id', UsuarioController.show)
-routes.post('/usuarios', UsuarioController.store)
-routes.put('/usuarios/:id', UsuarioController.update)
-routes.delete('/usuarios/:id', UsuarioController.destroy)
+// Routes User
+routes.get('/users', UserController.index)
+routes.get('/users/:id', UserController.show)
+routes.post('/users', UserController.store)
+routes.put('/users/:id', UserController.update)
+routes.delete('/users/:id', UserController.destroy)
 
-// Rotas Personagem
-routes.post('/personagens', PersonagemController.store)
+// Routes Character
+routes.post('/characters', CharacterController.store)
 
 
 module.exports = routes

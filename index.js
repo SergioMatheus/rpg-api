@@ -1,23 +1,22 @@
-// Porta do servidor
+// Port of server
 const port = 3000
 
-// Dependencias
+// Dependencies
 const express = require('express')
 const requireDir = require('require-dir')
-const mongoose = require('mongoose')
 
-// Inicialização do app
+// Initialization of the app
 const app = express()
 app.use(express.json())
 
-// Iniciando o DB
+// Initialization of the DB
 require('./config/database.js')
 requireDir('./src/models/game')
 
-// Rotas
+// Routes
 app.use('/api', require('./src/routes'))
 
-// Inicialização do servidor na porta 3000
+// Initialization of the server in port 3000
 app.listen(port, () => {
-    console.log('Servidor da API inicializado')
+    console.log('Server of the API initialized')
 })

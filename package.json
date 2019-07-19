@@ -1,9 +1,9 @@
 {
   "name": "rpg-api",
   "version": "1.0.0",
-  "description": "Api para o game RPG para plataformas web e mobile",
+  "description": "Api for the game RPG for platform web and mobile",
   "main": "index.js",
-  "repository": "git@github.com:VictorGeruso/rpg-api.git",
+  "repository": "git@github.com:table-rpg/rpg-api.git",
   "author": "VictorGeruso <victor.geruso@gmail.com>",
   "license": "MIT",
   "scripts": {
