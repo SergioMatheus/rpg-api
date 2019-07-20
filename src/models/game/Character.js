@@ -63,7 +63,7 @@ const CharacterSchema = new mongoose.Schema({
      */
     level: {
         type: Number,
-        default: 0
+        default: 1
     },
     /**
      * The experience is gained from each character's achivement
@@ -261,5 +261,5 @@ const CharacterSchema = new mongoose.Schema({
     ]
 })
 
-// Create of the model
+// Creation of the model
 mongoose.model('Character', CharacterSchema)

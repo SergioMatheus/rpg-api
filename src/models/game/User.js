@@ -31,5 +31,5 @@ const UserSchema = new mongoose.Schema({
     ]
 })
 
-// Crate of the model
+// Creation of the model
 mongoose.model('User', UserSchema)

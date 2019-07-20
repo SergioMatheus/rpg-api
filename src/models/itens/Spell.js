@@ -28,5 +28,5 @@ const SpellSchema = new mongoose.Schema({
     }
 })
 
-// Cration of the model
+// Creation of the model
 mongoose.model('Spell', SpellSchema)

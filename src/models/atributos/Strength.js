@@ -18,5 +18,5 @@ const StrengthSchema = new mongoose.Schema({
     }
 })
 
-// Criation of the model
+// Creation of the model
 mongoose.model('Strength', StrengthSchema)

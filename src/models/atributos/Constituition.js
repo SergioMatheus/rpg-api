@@ -21,5 +21,5 @@ const ConstituitionSchema = new mongoose.Schema({
     }
 })
 
-// Criation of the model
+// Creation of the model
 mongoose.model('Constituition', ConstituitionSchema)
